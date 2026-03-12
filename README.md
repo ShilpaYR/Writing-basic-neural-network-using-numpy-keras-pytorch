@@ -25,32 +25,58 @@ All notebooks use a **3-variable nonlinear synthetic regression problem**, inclu
 
 ## Repository Contents
 
-The repository currently contains the following notebooks:  
-- `A_numpy_style_manual_backprop (1).ipynb`  
-- `B_pytorch_scratch_no_builtin_layers_V2 (1).ipynb`  
-- `C_pytorch_class_based_builtin (1).ipynb`  
-- `D_pytorch_lightning (1).ipynb`  
-- `E1_tensorflow_low_level (1).ipynb`  
-- `E2_tensorflow_builtin_layers (1).ipynb`  
-- `E3_tensorflow_functional_api (1).ipynb`  
-- `E4_tensorflow_high_level_subclassing (1).ipynb`  
+The repository contains the following notebooks:
+
+- `A_numpy_style_manual_backprop (1).ipynb`
+- `B_pytorch_scratch_no_builtin_layers_V2 (1).ipynb`
+- `C_pytorch_class_based_builtin (1).ipynb`
+- `D_pytorch_lightning (1).ipynb`
+- `E1_tensorflow_low_level (1).ipynb`
+- `E2_tensorflow_builtin_layers (1).ipynb`
+- `E3_tensorflow_functional_api (1).ipynb`
+- `E4_tensorflow_high_level_subclassing (1).ipynb`
 
 ---
 
-## Quick Access Table: Colabs and Video Walkthroughs
+## Submission Checklist
 
-| Assignment Part | Notebook File | Implementation Type | Video Walkthrough |
+| Item | Deliverable | Status | Evidence |
 |---|---|---|---|
-| A | `A_numpy_style_manual_backprop (1).ipynb` | NumPy-style manual neural network with manual backpropagation and `tf.einsum` | https://youtu.be/H7VnsYx73RY |
-| B | `B_pytorch_scratch_no_builtin_layers_V2 (1).ipynb` | PyTorch from scratch without built-in layer functionality | https://youtu.be/jx4tdm7OrFI |
-| C | `C_pytorch_class_based_builtin (1).ipynb` | PyTorch class-based neural network using built-in modules | https://youtu.be/jx4tdm7OrFI |
-| D | `D_pytorch_lightning (1).ipynb` | PyTorch Lightning implementation | https://youtu.be/jx4tdm7OrFI |
-| E1 | `E1_tensorflow_low_level (1).ipynb` | TensorFlow low-level implementation without high-level API | https://youtu.be/sS1-PAO4otQ |
-| E2 | `E2_tensorflow_builtin_layers (1).ipynb` | TensorFlow built-in layers implementation | https://youtu.be/bSf2RFEcYuU |
-| E3 | `E3_tensorflow_functional_api (1).ipynb` | TensorFlow Functional API implementation | https://youtu.be/WupTIjZCzh4 |
-| E4 | `E4_tensorflow_high_level_subclassing (1).ipynb` | TensorFlow high-level model subclassing implementation | https://youtu.be/29ZadO7YeRs |
+| Repository | Public GitHub repo with all notebooks | Completed | Repo listing |
+| Documentation | README with notebook and video links | Completed | README section |
+| Walkthrough videos | YouTube recordings covering all supplied demos | Completed | YouTube links |
+| Executed notebooks | Outputs visible inside each notebook | Completed | Notebook outputs |
+| Model variants | NumPy, PyTorch, Lightning, and TensorFlow implementations | Completed | 8 notebooks |
 
-> **Note:** The supplied PyTorch video mapping includes one walkthrough link covering the PyTorch notebook set. If your uploaded YouTube titles are more specific in your final submission, keep the same table format and adjust the links row-by-row.
+---
+
+## Repository Inventory
+
+| Notebook | Framework | Primary Implementation Style |
+|---|---|---|
+| `A_numpy_style_manual_backprop (1).ipynb` | TensorFlow ops + manual logic | NumPy-style manual backprop with `tf.einsum` |
+| `B_pytorch_scratch_no_builtin_layers_V2 (1).ipynb` | PyTorch | Raw trainable tensors, no built-in layers |
+| `C_pytorch_class_based_builtin (1).ipynb` | PyTorch | `nn.Module` class-based network |
+| `D_pytorch_lightning (1).ipynb` | PyTorch Lightning | `LightningModule` with trainer workflow |
+| `E1_tensorflow_low_level (1).ipynb` | TensorFlow | Low-level custom network and `GradientTape` |
+| `E2_tensorflow_builtin_layers (1).ipynb` | TensorFlow | Sequential / built-in Dense layers |
+| `E3_tensorflow_functional_api (1).ipynb` | TensorFlow | Functional API graph definition |
+| `E4_tensorflow_high_level_subclassing (1).ipynb` | TensorFlow | Model subclassing / high-level API |
+
+---
+
+## Video Walkthrough Mapping
+
+Six YouTube links were provided. One video is a **combined PyTorch walkthrough** and covers notebooks **B, C, and D together**. The remaining links map individually to **A** and **E1–E4**.
+
+| Notebook(s) | Video Title / Scope | Link |
+|---|---|---|
+| `A_numpy_style_manual_backprop (1).ipynb` | A_numpy_style_manual_backprop Demo | https://youtu.be/jx4tdm7OrFI |
+| `B_pytorch_scratch_no_builtin_layers_V2 (1).ipynb`  `C_pytorch_class_based_builtin (1).ipynb`  `D_pytorch_lightning (1).ipynb` | Combined PyTorch walkthrough covering B / C / D | https://youtu.be/H7VnsYx73RY |
+| `E1_tensorflow_low_level (1).ipynb` | E1_tensorflow_low_level demo | https://youtu.be/sS1-PAO4otQ |
+| `E2_tensorflow_builtin_layers (1).ipynb` | E2_tensorflow_builtin_layers | https://youtu.be/bSf2RFEcYuU |
+| `E3_tensorflow_functional_api (1).ipynb` | E3_tensorflow_functional_api | https://youtu.be/WupTIjZCzh4 |
+| `E4_tensorflow_high_level_subclassing (1).ipynb` | E4_tensorflow_high_level_subclassing Demo Video | https://youtu.be/29ZadO7YeRs |
 
 ---
 
@@ -103,7 +129,7 @@ All notebooks are based on the same learning objective:
 - with a **3-hidden-layer neural network**,
 - and compare how the same problem is implemented across different frameworks and abstraction levels.
 
-### Shared workflow across notebooks
+### Shared Workflow Across Notebooks
 1. Generate synthetic nonlinear regression data using 3 variables.  
 2. Split the data into training, validation, and test sets.  
 3. Visualize the data using a **4D-style plot**.  
@@ -111,7 +137,7 @@ All notebooks are based on the same learning objective:
 5. Track training behavior through loss curves.  
 6. Evaluate model performance using final prediction metrics and true-vs-predicted plots.  
 
-### Common evaluation style
+### Common Evaluation Style
 The notebooks typically include:
 - loss across epochs,
 - final train/validation/test behavior,
@@ -125,10 +151,10 @@ The notebooks typically include:
 For the Teaching Assistant or Instructor:
 
 1. Open the GitHub repository.  
-2. Review the notebook names in the table above.  
+2. Review the notebook names in the tables above.  
 3. Use the corresponding YouTube links for each notebook walkthrough.  
 4. Open each notebook and verify:
-   - execution cells,
+   - executed cells,
    - model implementation,
    - loss curves,
    - output plots,
@@ -172,9 +198,9 @@ The goal of the submission is not only to train a working model, but also to com
 https://github.com/ShilpaYR/Writing-basic-neural-network-using-numpy-keras-pytorch
 
 **YouTube Walkthroughs:**  
-- https://youtu.be/H7VnsYx73RY  
-- https://youtu.be/jx4tdm7OrFI  
-- https://youtu.be/sS1-PAO4otQ  
-- https://youtu.be/bSf2RFEcYuU  
-- https://youtu.be/WupTIjZCzh4  
-- https://youtu.be/29ZadO7YeRs
+- A notebook: https://youtu.be/jx4tdm7OrFI  
+- B / C / D combined PyTorch walkthrough: https://youtu.be/H7VnsYx73RY  
+- E1 notebook: https://youtu.be/sS1-PAO4otQ  
+- E2 notebook: https://youtu.be/bSf2RFEcYuU  
+- E3 notebook: https://youtu.be/WupTIjZCzh4  
+- E4 notebook: https://youtu.be/29ZadO7YeRs
